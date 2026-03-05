@@ -1,0 +1,110 @@
+.portfolio {
+  padding: 5rem 1.5rem;
+  background: var(--color-bg);
+}
+
+.portfolio__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio__title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.portfolio__intro {
+  text-align: center;
+  color: var(--color-primary);
+  opacity: 0.85;
+  max-width: 560px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.portfolio__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio__item {
+  margin: 0;
+}
+
+.portfolio__card {
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s;
+}
+
+.portfolio__card:hover {
+  transform: scale(1.02);
+}
+
+.portfolio__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio__card-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+}
+
+.portfolio__category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+
+.portfolio__card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.portfolio__cta-wrap {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.portfolio__cta {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portfolio__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
