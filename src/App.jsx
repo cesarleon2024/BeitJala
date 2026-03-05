@@ -10,7 +10,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { ColorPaletteSwitcher } from './components/ColorPaletteSwitcher'
 
-const DEFAULT_PALETTE_ID = 'natural'
+const DEFAULT_PALETTE_ID = 'premium'
 
 function App() {
   const [paletteId, setPaletteId] = useState(() => {
